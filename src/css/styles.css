@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans", sans-serif;
+}
+:root{
+    --Darkblue: hsl(233, 26%, 24%);
+    --Green: hsl(136, 64%, 51%);
+    --Cyan: hsl(192, 69%, 51%);
+    --Gray: hsl(233, 8%, 62%);
+    --Gray100: hsl(220, 16%, 96%);
+    --Gray50: hsl(0, 0%, 98%);
+    --White: hsl(0, 100%, 100%);
+
+}
+#header-content{
+    width: 100%;
+    height: 3rem;
+    background-color: var(--White);
+    margin: 1rem auto;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#nav-links{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+#nav-links a{
+    text-decoration: none;
+    color: var(--Gray);
+    font-weight: 300;
+}
+#nav-links a:hover{
+    color: var(--Darkblue);
+    padding-bottom: 15px;
+    border-bottom: 3px solid var(--Green) ;
+}
+.button{
+    padding: 10px 20px;
+    background-image: linear-gradient(to bottom left,var(--Green), var(--Cyan));
+    border: none;
+    border-radius: 20px;
+    color: var(--Gray50);
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 0.5;
+}
+#intro{
+    background-color: var(--Gray50);
+    position: relative;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    overflow: visible;
+}
+#intro-text,
+#intro-img {
+    width: 50%;
+}
+#intro-text{
+    margin-top: 7rem;
+    margin-left: 7.3rem;
+    
+}
+#intro-text h1{
+    font-size: 42px;
+    width: 60%;
+    letter-spacing: -1px;
+    font-weight: 500;
+    color: var(--Darkblue);
+    margin-bottom: 20px;
+}
+#intro-text p{
+    width: 60%;
+    color: var(--Gray);
+    margin-bottom: 20px;
+}
+#intro-img {
+    position: relative; 
+    height: 100%;
+    width: 850px;
+    overflow: hidden;
+}
+#intro-img img:first-child {
+    position: absolute;
+    top: -180px;
+    right: -100px;
+    width: 120%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+#intro-img img:last-child {
+    position: absolute;
+    top: -140px;
+    right: -110px;
+    width: 90%;
+    z-index: 2;
+    pointer-events: none;
+}
+#why-chose{
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Gray100);
+  
+}
+#why-chose-intro{
+    margin-top: 4rem;
+    margin-left: 7.3rem;
+}
+#why-chose-intro h2{
+    font-weight: 500;
+    color: var(--Darkblue);
+    margin-bottom: 20px;
+}
+#why-chose-intro p{
+    width: 40%;
+    color: var(--Gray);
+    font-size: 14px;
+}
+#cards{
+    display: flex;
+    margin: 4rem 7.3rem;
+}
+.card img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+.card h3{
+    font-weight: 500;
+    color: var(--Darkblue);
+    margin-bottom: 15px;
+}
+.card p{
+    width: 65%;
+    font-size: 14px;
+    color: var(--Gray);
+}
+#articles-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Gray50);
+    height: 600px;
+}
+#articles-container h2{
+    margin-top: 4rem;
+    margin-left: 7.3rem;
+    color: var(--Darkblue);
+    font-weight: 500;
+    font-size: 30px;
+}
+#articles{
+    display: flex;
+    margin: 2rem 7.3rem;
+    width: 80%;
+    gap:20px;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 430px;
+    background-color: var(--White);
+    border-radius: 5px;
+}
+.article img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+.article h4{
+    font-size: 12px;
+    margin-left: 20px;
+    color: var(--Gray);
+}
+.article h3{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: var(--Darkblue);
+}
+.article h3:hover{
+    color: var(--Green);
+    cursor: pointer;
+}
+.article p{
+    margin-left: 20px;
+    margin-top: 15px;
+    color: var(--Gray);
+    width: 90%;
+}
+#footer{
+    background-color: var(--Darkblue);
+    display: flex;
+    height: 180px;
+    justify-content: space-around;
+    align-items: center;
+}
+#social-media-content{
+    display: flex;
+    flex-direction: column;
+}
+#social-media{
+    margin-top: 40px;
+}
+#social-media img{
+    margin-right: 12px;
+    cursor: pointer;
+}
+#footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 200px;
+}
+#footer-links a{
+    color: var(--Gray100);
+    text-decoration: none;
+    font-weight: 300;
+}
+#footer-links a:hover{
+    color: var(--Green);
+}
+#botao-footer button{
+    margin-left: 8rem;
+}
+#botao-footer p{
+    margin-top: 20px;
+    color: var(--Gray);
+}
